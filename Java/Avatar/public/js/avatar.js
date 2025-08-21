@@ -1,5 +1,7 @@
 let ataqueJugador
 let ataqueEnemigo
+let vidasJugador = 3;
+let vidasEnemigo = 3;
 
 function iniciarjuego() {
     let botonReiniciar = document.getElementById('boton-reiniciar')
@@ -41,7 +43,7 @@ function seleccionarPersonajeEnemigo() {
 }
 
 function ataquePunio() {
-    ataqueJugador = 'Puño'
+    ataqueJugador = 'Punio'
     ataqueAleatorioEnemigo()
 }
 
@@ -59,7 +61,7 @@ function ataqueAleatorioEnemigo() {
     let ataqueAleatorio = aleatorio(1, 3)
 
     if(ataqueAleatorio == 1) {
-        ataqueEnemigo = 'Puño'
+        ataqueEnemigo = 'Punio'
     }else if(ataqueAleatorio == 2) {
         ataqueEnemigo = 'Patada'
     }else {
@@ -71,18 +73,38 @@ function ataqueAleatorioEnemigo() {
 
 function combate(){
     //COMBATE
-    if (ataqueJugador == ataqueEnemigo) { 
-        crearMensaje("EMPATE")
-    } else if(ataqueJugador == 'Punio' && ataqueEnemigo == 'Barrida') {
-        crearMensaje("GANASTE")    
-    }else if(ataqueJugador == 'Patada' && ataqueEnemigo == 'Punio'){
-        crearMensaje("GANASTE")
-    } else if(ataqueJugador == 'Barrida' && ataqueEnemigo == 'Patada') {
-        crearMensaje("GANASTE")      
+    if (ataqueJugador == ataqueEnemigo) {
+        crearMensaje("EMPATE");
+    } else if (ataqueJugador == 'Punio' && ataqueEnemigo == 'Barrida' ||
+               ataqueJugador == 'Patada' && ataqueEnemigo == 'Punio' ||
+               ataqueJugador == 'Barrida' && ataqueEnemigo == 'Patada') {
+        crearMensaje("GANASTE");
+        vidasEnemigo--; // Resta vida al enemigo 
     } else {
-        crearMensaje("PERDISTE")       
+        crearMensaje("PERDISTE");
+        vidasJugador--; // Resta vida al jugador       
     }
 
+    actualizarVidas();
+    revisarFinDelJuego();
+
+}
+
+function actualizarVidas() {
+    document.getElementById('vidas-jugador').innerText = vidasJugador;
+    document.getElementById('vidas-enemigo').innerText = vidasEnemigo;
+}
+
+function revisarFinDelJuego() {
+    if (vidasJugador === 0 || vidasEnemigo === 0) {
+        let mensajeFinal = vidasJugador === 0 ? "---Has perdido el juego---" : "---Ganaste el juego---"
+        alert(mensajeFinal);
+
+        //Desactivar botones de ataque
+        document.getElementById('boton-punio').disabled = true;
+        document.getElementById('boton-patada').disabled = true;
+        document.getElementById('boton-barrida').disabled = true;
+    }
 }
 
 function crearMensaje(resultado){
@@ -97,5 +119,24 @@ function crearMensaje(resultado){
 function aleatorio (min, max){
      return Math.floor(Math.random() * (max - min +1) + min)
 }
+
+//Mostar y ocultar modal de reglas
+const modal = document.getElementById('modal-reglas');
+const botonReglas = document.getElementById('boton-reglas');
+const cerrarModal = document.getElementById('cerrar-modal');
+
+botonReglas.addEventListener('click', () => {
+    modal.style.display = 'flex';
+});
+
+cerrarModal.addEventListener('click', () => {
+    modal.style.display = 'none';
+});
+
+window.addEventListener('click', (e) => {
+    if (e.target === modal) {
+        modal.style.display = 'none';
+    }
+});
 
 window.addEventListener('load', iniciarjuego);
