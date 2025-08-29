@@ -113,3 +113,56 @@ window.addEventListener('click', (e) => { if (e.target === modal) modal.style.di
 
 
 window.addEventListener('load', iniciarJuego);
+
+// --- Animación de aparición/desaparición y sticky de reglas ---
+document.addEventListener('DOMContentLoaded', () => {
+    const secciones = document.querySelectorAll('.seccion-scroll');
+    const reglasSection = document.getElementById('reglas-section');
+    const selectorPersonaje = document.getElementById('seleccionar-personaje');
+    let firstScrollDone = false;
+
+    // Ocultar todas menos reglas al inicio
+    secciones.forEach((seccion, i) => {
+        if (i === 0) {
+            seccion.classList.add('visible');
+            seccion.classList.remove('oculto');
+        } else {
+            seccion.classList.remove('visible', 'push-up');
+            seccion.classList.add('oculto');
+        }
+    });
+
+    // Mostrar selector de personaje tras primer scroll
+    function mostrarSelectorPersonaje() {
+        if (!firstScrollDone) {
+            selectorPersonaje.classList.add('visible', 'push-up');
+            selectorPersonaje.classList.remove('oculto');
+            firstScrollDone = true;
+        }
+    }
+    window.addEventListener('scroll', mostrarSelectorPersonaje, { once: true });
+
+    // Intersection Observer para el resto de secciones (excepto reglas y selector)
+    const observer = new IntersectionObserver((entradas) => {
+        entradas.forEach(entrada => {
+            if (entrada.isIntersecting) {
+                entrada.target.classList.add('visible', 'push-up');
+                entrada.target.classList.remove('oculto');
+            } else {
+                if (window.scrollY < window.lastScrollY) {
+                    entrada.target.classList.remove('visible', 'push-up');
+                    entrada.target.classList.add('oculto');
+                }
+            }
+        });
+        window.lastScrollY = window.scrollY;
+    }, {
+        threshold: 0.3
+    });
+
+    secciones.forEach((seccion, i) => {
+        if (i > 1) {
+            observer.observe(seccion);
+        }
+    });
+});
