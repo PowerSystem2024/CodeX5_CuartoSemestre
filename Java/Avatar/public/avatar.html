@@ -6,16 +6,28 @@
     <title>LA LEYENDA DE AANG: AVATAR</title>
     <link rel="stylesheet" href="./avatar.css">
 
+    <style>
+        .oculto {
+            opacity: 0;
+            transform: translateY(60px);
+            transition: opacity 0.7s, transform 0.7s;
+        }
+        .visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+
 </head>
 <body>
     <h1>AVATAR🔥💧🌱🌪️ </h1>
 
     <!--Boton para reglas-->
-    <section>
+    <section class="seccion-scroll" id="reglas-section">
         <button id="boton-reglas">📜 Reglas del Juego</button>
     </section>
 
-    <section id="seleccionar-personaje">
+    <section id="seleccionar-personaje" class="seccion-scroll oculto">
         <!--<h2>Elige tu Personaje</h2>-->
         <div class="personaje">
         <input type="radio" name="personaje" id="zuko"/>
@@ -50,10 +62,10 @@
         </label>
         </div>
 
-      <button id="boton-personaje">Seleccionar</button>
+            <button id="boton-personaje">Seleccionar</button>
         </section>
 
-        <section id="seleccionar-ataque">
+        <section id="seleccionar-ataque" class="seccion-scroll oculto">
             <!--<h2>Elige tu Ataque</h2>--> 
             <p>Tu personaje <span id="personaje-jugador"></span> tiene <span id="vidas-jugador">3</span> vidas</p>
             <p>El personaje del enemigo <span id="personaje-enemigo"></span> tiene <span id="vidas-enemigo">3</span> vidas</p>
@@ -64,12 +76,11 @@
             </p>
         </section>
 
-        <section id="mensajes">
-            
+        <section id="mensajes" class="seccion-scroll oculto">
         </section>
 
-        <section id="reiniciar">
-            <button id="boton-reiniciar">reiniciar</button>
+        <section id="reiniciar" class="seccion-scroll oculto">
+                <button id="boton-reiniciar">reiniciar</button>
         </section>
 
         <!-- Modal de Reglas-->

@@ -1,3 +1,40 @@
+/* --- Animaciones de scroll y sticky --- */
+.seccion-scroll {
+    will-change: opacity, transform;
+}
+.oculto {
+    opacity: 0;
+    transform: translateY(60px);
+    pointer-events: none;
+    transition: opacity 0.7s, transform 0.7s;
+}
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+    transition: opacity 0.7s, transform 0.7s;
+}
+.push-up {
+    animation: pushUp 0.7s cubic-bezier(.4,2,.6,1) both;
+}
+@keyframes pushUp {
+    0% {
+        opacity: 0;
+        transform: translateY(60px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.sticky-reglas {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    background: rgba(255,255,255,0.97);
+    transition: box-shadow 0.3s;
+}
 body {
     background: linear-gradient(120deg, #e0c3a3 0%, #b5c99a 100%);
     color: #3e2c18;

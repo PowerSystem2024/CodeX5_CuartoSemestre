@@ -1,0 +1,156 @@
+/*Product stailes*/
+.card-products-container {
+    margin: 5vh auto;
+}
+
+.card-products {
+text-align: center; display: flex; flex-direction: row;
+justify-content: space-around;
+flex-wrap: wrap;
+}
+
+.card-products img {
+margin-top: 40px;
+width: 250px;
+height: 250px;
+}
+
+.card-products button { border: none; outline: 0;
+padding: 10px;
+color: white;
+background-color: #1bcb7f;
+text-align: center;
+cursor: pointer;
+width: 100%;
+font-size: 15px;
+}
+
+.card-products button:hover{
+    opacity: 0.7;
+}
+
+.cart-btn {
+position: fixed; top: 90vh;
+right: 40px;
+background-color: rgb(25, 25, 25);
+padding: 10px;
+border-radius: 50%;
+height: 24px;
+width: 24px;
+transition: transform 0.2s ease-in-out;
+}
+
+.cart-btn:hover {
+cursor: pointer; opacity: 0.9;
+}
+
+
+/*modal*/
+.modal-overlay { display: none;
+background-color: rgba(0, 0, 0, 0.5);
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+z-index: 1;
+}
+
+
+.modal-container {
+display: none; background-color:
+#ffffff;
+box-shadow: 0px 3px 6px #eeeeee29;
+padding: 40px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+max-width: 500px;
+width: 100%;
+z-index: 1;
+max-height: 80vh;
+overflow-y: auto;
+}
+
+.modal-container::-webkit-scrollbar {
+display: none;
+}
+
+
+.modal-close {
+float: right;
+cursor: pointer;
+}
+
+.modal-title {
+font-size: 24px;
+font-weight: bold;
+margin-bottom: 20px;
+text-align: center;
+}
+
+
+
+
+/* Cada producto del carrito */
+.product {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 15px 0;
+  gap: 10px;
+}
+
+/* Imagen más chica */
+.product-img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+/* Info del producto */
+.product-info h4 {
+  font-size: 16px;
+  margin: 0;
+}
+
+/* Controles de cantidad */
+.quantity {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.quantity-btn-decrease,
+.quantity-btn-increase {
+  cursor: pointer;
+  padding: 2px 6px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  user-select: none;
+}
+
+.quantity-input {
+  min-width: 20px;
+  text-align: center;
+  display: inline-block;
+}
+
+/* Precio */
+.price {
+  font-size: 14px;
+  font-weight: bold;
+  min-width: 40px;
+  text-align: right;
+}
+
+/* Botón eliminar */
+.delete-product {
+  cursor: pointer;
+  color: red;
+  font-size: 18px;
+}
+
+
+
