@@ -29,7 +29,7 @@ font-size: 15px;
     opacity: 0.7;
 }
 
-.cart.btn {
+.cart-btn {
 position: fixed; top: 90vh;
 right: 40px;
 background-color: rgb(25, 25, 25);
@@ -89,3 +89,68 @@ font-weight: bold;
 margin-bottom: 20px;
 text-align: center;
 }
+
+
+
+
+/* Cada producto del carrito */
+.product {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 15px 0;
+  gap: 10px;
+}
+
+/* Imagen más chica */
+.product-img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+/* Info del producto */
+.product-info h4 {
+  font-size: 16px;
+  margin: 0;
+}
+
+/* Controles de cantidad */
+.quantity {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.quantity-btn-decrease,
+.quantity-btn-increase {
+  cursor: pointer;
+  padding: 2px 6px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  user-select: none;
+}
+
+.quantity-input {
+  min-width: 20px;
+  text-align: center;
+  display: inline-block;
+}
+
+/* Precio */
+.price {
+  font-size: 14px;
+  font-weight: bold;
+  min-width: 40px;
+  text-align: right;
+}
+
+/* Botón eliminar */
+.delete-product {
+  cursor: pointer;
+  color: red;
+  font-size: 18px;
+}
+
+
+
