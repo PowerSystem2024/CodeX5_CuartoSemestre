@@ -2,6 +2,7 @@ package utn.estudiantes.modelo;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -17,8 +18,7 @@ import lombok.ToString;
 public class Estudiante {
     private Integer idEstudiante;
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer idEstudiante;   
+    @GeneratedValue(strategy = GenerationType.IDENTITY)   
     private String nombre;
     private String apellido;
     private String telefono;
