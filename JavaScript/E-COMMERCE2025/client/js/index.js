@@ -1,5 +1,5 @@
 const shopContent = document.getElementById("shopContent");
-const cart = []; // Este es nuestro carrito , un array vacio
+const cart = []; // Este es nuestro carrito, un array vacio
 
 products.forEach((product) => {
     const content = document.createElement("div");
@@ -13,7 +13,7 @@ products.forEach((product) => {
     const buyButton = document.createElement("button");
     buyButton.innerText = "Comprar";
 
-    content.append(buyButton );
+    content.append(buyButton);
     
     buyButton.addEventListener("click", ()=>{
         const repeat = cart.some ((repeatProduct)=> repeatProduct.id === product.id);
@@ -22,6 +22,7 @@ products.forEach((product) => {
             cart.map((prod)=>{
                 if (prod.id === product.id) {
                     prod.quanty++;
+                    displayCartCounter();
                 }
             });
         }else {
@@ -29,12 +30,10 @@ products.forEach((product) => {
             id: product.id,
             productName: product.productName,
             price: product.price,
-            quanty: product.quanty,
+            quanty: product.quanty || 1, // Asegura que sea 1 si no existe en products
             img: product.img,
         });
+        displayCartCounter(); // Quité el duplicado
     }
 });
 });
-
-
-
