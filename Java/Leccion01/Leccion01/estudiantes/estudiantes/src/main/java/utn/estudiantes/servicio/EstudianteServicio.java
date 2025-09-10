@@ -18,7 +18,7 @@ public class EstudianteServicio implements IEstudianteServicio {
         List<Estudiante> estudiantes = estudianteRepositorio.findAll();
         return estudiantes;
     }
-    
+
     @Override
     public Estudiante buscarEstudiantePorId(Integer id) {
         Estudiante estudiante = estudianteRepositorio.findById(id).orElse(null);
@@ -28,15 +28,15 @@ public class EstudianteServicio implements IEstudianteServicio {
     @Override
     public void eliminarEstudiante(Estudiante estudiante) {
         estudianteRepositorio.delete(estudiante);
-        
+
     }
 
     @Override
     public void guardarEstudiante(Estudiante estudiante) {
         estudianteRepositorio.save(estudiante);
-        
+
     }
 
-    
-    
+
+
 }

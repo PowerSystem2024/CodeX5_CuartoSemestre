@@ -5,7 +5,7 @@ import utn.estudiantes.modelo.Estudiante;
 
 public interface IEstudianteServicio {
     public List<Estudiante> listarEstudiantes();
-    public Estudiante buscarEstudiantePorId(Integer id);
+    public Estudiante buscarEstudiantePorId(Integer idEstudiante2022);
     public void guardarEstudiante(Estudiante estudiante);
     public void eliminarEstudiante(Estudiante estudiante);
 }
