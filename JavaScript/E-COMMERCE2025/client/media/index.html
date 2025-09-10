@@ -1,26 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../media/style.css">
-    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+<script src="https://sdk.mercadopago.com/js/v2"></script>
+<script>
+  const mp = new MercadoPago('APP_USR-edc06f06-ecaa-4e65-941d-0201d2c84867', {
+      locale: 'es-AR'
+  });
+</script>
+    <title>Document</title>
 </head>
 <body>
-    <!--Shop Content-->
-    <div class="card-products-container">
-        <div class="card-products" id="shopContent"></div>
-    </div>
+        <div class="card-products-container">
+        <div class="card-products" id="shopContent"></div>
+    </div>
 
-    <!--Cart-btn-->
-    <div class="cart-btn" id="cart-btn">🛒</div>
-    
-    <!--modal-->
-    <div class="modal-overlay" id="modal-overlay"></div> <div
-    class="modal-container" id="modal-container"></div>
+        <div class="cart-btn" id="cart-btn">🛒</div>
+        <span class="cart-counter" id="cart-counter">0</span>
+    
+        <div class="modal-overlay" id="modal-overlay"></div> 
+    <div class="modal-container" id="modal-container"></div>
 
-    <script src="../js/products.js"></script>
-    <script src="../js/index.js"></script>
-    <script src="../js/cart.js"></script>
+        <script src="/js/products.js"></script>
+    <script src="/js/index.js"></script>
+    <script src="/js/cart.js"></script>
+
 </body>
 </html>

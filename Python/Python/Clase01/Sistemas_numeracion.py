@@ -1,37 +1,38 @@
-# Profundizando en los sistemas de numeracion
+#Profundizando en los sistemas de numeracion
 
-# Sistema decimal
+#Sistema decimal
 a = 10
-print(f"a decimal: {a}")
+print(f"decimal = {a}")
 
-# Sistema binario
-a = 0b1010
-print(f"a binario: {a}")
+#Sistema binario
+b = 0b1010
+print(f"binario = {b}")
 
-# Sistema octal
-a = 0o12
-print(f"a octal: {a}")
+#Sistema octal
+c = 0o12
+print(f"octal = {c}")
 
-# Sistema hexadecimal
-a = 0xA
-print(f"a hexadecimal: {a}")
+#Sistema hexadecimal
+d = 0xA
+print(f"hexadecimal = {d}")
 
-# Base decimal
-a = int("23", 10)
-print(f"a = base decimal: {a}")
+#Base Decimal
+a = int('23', 10)
+print(f"base decimal = {a}")
 
-# Base Binario
-a = int("10111", 2)
-print(f"a = base binario: {a}")
+#Base Binario
+b = int('10111', 2)
+print(f"base binaria = {b}")
 
-# Base Octal
-a = int("27", 8)
-print(f"a = base octal: {a}")
+#Base Octal
+c = int('27', 8)
+print(f"base octal = {c}")
 
-# Base Hexadecimal
-a = int("17", 16)
-print(f"a = base hexadecimal: {a}")
+#Base Hexadecimal
+d = int('17', 16)
+print(f"base hexadecimal = {d}")
 
-# Base 5 sus valores son de 0 a 4
-a = int("34", 5)
-print(f"a = base 5: {a}")
+#Base 5
+#Sus valores son de 0 a 4
+a = int('343', 5)
+print(f"base 5 = {a}")
