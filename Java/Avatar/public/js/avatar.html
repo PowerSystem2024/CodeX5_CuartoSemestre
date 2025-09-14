@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Avatar - Juego</title>
+<link rel="stylesheet" href="./avatar.css">
+</head>
+<body>
+
+<h1>AVATAR - TEST</h1>
+
+<section>
+    <button id="boton-reglas">📜 Reglas del Juego</button>
+</section>
+
+<section id="seleccionar-personaje"></section>
+
+<section id="crear-personaje">
+    <input id="nuevo-personaje" placeholder="Nombre del nuevo personaje" />
+    <button id="boton-crear">Agregar Personaje</button>
+</section>
+
+<section id="seleccionar-ataque">
+    <p>Tu personaje <span id="personaje-jugador">-</span> tiene <span id="vidas-jugador">3</span> vidas</p>
+    <p>El personaje del enemigo <span id="personaje-enemigo">-</span> tiene <span id="vidas-enemigo">3</span> vidas</p>
+    <p>
+        <button id="boton-puno">Puño 👊</button>
+        <button id="boton-patada">Patada 🦶</button>
+        <button id="boton-barrida">Barrida 🦵</button>
+    </p>
+</section>
+
+<section id="mensajes">
+    <h3>Historial de Combates:</h3>
+</section>
+
+<section id="reiniciar">
+    <button id="boton-reiniciar">Reiniciar</button>
+</section>
+
+<!-- Modal Reglas -->
+<div id="modal-reglas" class="modal" role="dialog" aria-label="Reglas">
+    <div class="modal-contenido">
+        <span id="cerrar-modal" class="cerrar">&times;</span>
+        <h2>Reglas</h2>
+        <ul>
+            <li>Puño vence a Barrida</li>
+            <li>Barrida vence a Patada</li>
+            <li>Patada vence a Puño</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Modal Historial -->
+<div id="modal-historial" class="modal" role="dialog" aria-label="Historial">
+    <div class="modal-contenido">
+        <span id="cerrar-historial" class="cerrar">&times;</span>
+        <h2>Historial</h2>
+        <div id="contenido-historial"></div>
+    </div>
+</div>
+
+<div class="debug" id="debugBox">debug: listo</div>
+
+    <script src="./avatar.js"></script>
+</body>
+</html>
