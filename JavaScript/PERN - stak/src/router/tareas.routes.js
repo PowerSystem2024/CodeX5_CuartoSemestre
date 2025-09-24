@@ -1,12 +1,12 @@
-import { Router } from "express";   
-import{ crearTarea, eliminarTarea, listarTarea } from "../controllers/tareas.controller.js";
-import { act } from "react";
+import Router from "express-promise-router";   
+import{ crearTarea, eliminarTarea, listarTarea, actualizarTarea, listarTareas } from "../controllers/tareas.controller.js";
+
 
 const router = Router();
 
-router.get("tareas/", listarTarea);
+router.get("/tareas", listarTareas);
 
-router.get('/tareas/ id', listarTarea);
+router.get('/tareas/:id', listarTarea);
 
 router.post('/tareas', crearTarea );
 

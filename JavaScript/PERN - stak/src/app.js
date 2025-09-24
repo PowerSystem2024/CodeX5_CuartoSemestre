@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 
-app.get("/", (req, res) => res.jsoon ({ message: "Hello World" }));
+app.get("/", (req, res) => res.json ({ message: "Hello World" }));
 
 app.use("/api", tareasRoutes);
 app.use("/api", authRoutes);
