@@ -18,13 +18,13 @@ export const listarTarea = async (req, res) => {
 };
 
 export const crearTarea = async (req, res, next) => {
-  const { titulo, decripcion } = req.body;
+  const { titulo, descripcion } = req.body;
 
   try {
 
     const result = await pool.query(
-    "INSERT INTO tareas ( titulo, decripcion ) VALUES ($1, $2) RETUrNING *",
-    [titulo, decripcion]
+    "INSERT INTO tareas ( titulo, descripcion ) VALUES ($1, $2) RETURNING *",
+    [titulo, descripcion]
     );
     res.json(result.rows [0]);
     console.log(result.rows[0]);
@@ -41,9 +41,9 @@ export const crearTarea = async (req, res, next) => {
 };
 
 export const actualizarTarea = async (req, res) => {
-    const { titulo, decripcion } = req.body;
+    const { titulo, descripcion } = req.body;
     const id = req.params.id;
-    const result = await pool.query('UPDATE tareas SET titulo = $1, decripcion = $2 WHERE id = $3 RETURNING *', [titulo, decripcion, id]);  
+    const result = await pool.query('UPDATE tareas SET titulo = $1, descripcion = $2 WHERE id = $3 RETURNING *', [titulo, descripcion, id]);  
     
     if (result.rowCount === 0) {
         return res.status(404).json({
