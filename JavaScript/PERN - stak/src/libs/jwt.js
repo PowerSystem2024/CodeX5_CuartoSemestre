@@ -1,12 +1,11 @@
-import jwt from 'jsonwebtoken';
+import jwt from "jsonwebtoken";
 
-export const createAccessToken =  (payload) => {
+export const createAccessToken = (payLod) => {
     return new Promise((resolve, reject) => {
-    jwt.sign(paylod, "xyz123", {expiresIn: "1d"},
+        jwt.sign(payLod, "xyz123", { expiresIn: "Id"}),
         (err, token) => {
             if (err) reject(err);
             resolve(token);
-    });
-    });
-};
-
+        }
+    })
+}
