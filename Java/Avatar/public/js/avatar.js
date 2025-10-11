@@ -1,3 +1,18 @@
+// ---------------------------------------------------------
+// Declaración lenta de variables y orden de ejecución del código
+// ---------------------------------------------------------
+// En este juego, las variables que capturan elementos del DOM
+// se declaran dentro del constructor de la clase Juego.
+// Esto garantiza que el HTML ya haya sido completamente cargado
+// antes de intentar acceder a los elementos (por eso se usa
+// document.addEventListener('DOMContentLoaded', ...)).
+// Si el script se ejecutara antes de que el DOM exista,
+// produciría errores porque los elementos aún no estarían disponibles.
+// ---------------------------------------------------------
+
+
+
+
 console.log('avatar.js cargado');
 
 class Personaje {
