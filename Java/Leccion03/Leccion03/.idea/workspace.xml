@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="723fb131-31e1-4520-bd2a-ff16a9bc2598" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Leccion01/estudiantes/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Leccion01/estudiantes/.idea/estudiantes.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Leccion01/estudiantes/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Leccion01/estudiantes/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Leccion01/estudiantes/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Leccion01/estudiantes/estudiantes/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Leccion01/estudiantes/estudiantes/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Leccion01/estudiantes/estudiantes/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Leccion01/estudiantes/estudiantes/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Leccion01/estudiantes/estudiantes/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Leccion01/estudiantes/estudiantes/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Leccion01/estudiantes/estudiantes/src/main/java/utn/estudiantes/EstudiantesApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Leccion01/estudiantes/estudiantes/src/main/java/utn/estudiantes/modelo/Estudiante.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Leccion01/estudiantes/estudiantes/src/main/java/utn/estudiantes/repositorio/EstudianteRepositorio.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Leccion01/estudiantes/estudiantes/src/main/java/utn/estudiantes/servicio/EstudianteServicio.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Leccion01/estudiantes/estudiantes/src/main/java/utn/estudiantes/servicio/IEstudianteServicio.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Leccion01/estudiantes/estudiantes/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Leccion01/estudiantes/estudiantes/src/main/resources/logback-spring.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Leccion01/estudiantes/estudiantes/src/test/java/utn/estudiantes/EstudiantesApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Leccion03.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tienda_libros/tienda_libros/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tienda_libros/tienda_libros/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tienda_libros/tienda_libros/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tienda_libros/tienda_libros/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tienda_libros/tienda_libros/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tienda_libros/tienda_libros/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tienda_libros/tienda_libros/src/main/java/utn/tienda_libros/TiendaLibrosApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tienda_libros/tienda_libros/src/main/java/utn/tienda_libros/modelo/Libro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tienda_libros/tienda_libros/src/main/java/utn/tienda_libros/repositorio/LibroRepositorio.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tienda_libros/tienda_libros/src/main/java/utn/tienda_libros/servicio/ILibroServicio.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tienda_libros/tienda_libros/src/main/java/utn/tienda_libros/servicio/LibroServicio.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tienda_libros/tienda_libros/src/main/java/utn/tienda_libros/vista/LibroFrom.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tienda_libros/tienda_libros/src/main/java/utn/tienda_libros/vista/LibroFrom.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tienda_libros/tienda_libros/src/main/resources/application-h2.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tienda_libros/tienda_libros/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tienda_libros/tienda_libros/src/main/resources/logback-spring.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tienda_libros/tienda_libros/src/test/java/utn/tienda_libros/TiendaLibrosApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Javascript/PERN - stak/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Javascript/PERN - stak/src/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Javascript/PERN - stak/src/controllers/tareas.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Javascript/PERN - stak/src/controllers/tareas.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Javascript/PERN - stak/src/libs/jwt.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Javascript/PERN - stak/src/libs/jwt.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Javascript/PERN - stak/src/router/auth.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Javascript/PERN - stak/src/router/auth.routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Javascript/PERN - stak/src/router/tareas.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Javascript/PERN - stak/src/router/tareas.routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Juego_Tecnicatura/assets_1/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Juego_Tecnicatura/constantes.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Python/Juego_Tecnicatura/constantes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Juego_Tecnicatura/explosiones.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Python/Juego_Tecnicatura/explosiones.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Juego_Tecnicatura/personaje.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Python/Juego_Tecnicatura/personaje.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="33DIatOlKk3PLrkbfvXKav8c1Fl" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.TiendaLibrosApplication.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/santy/OneDrive/Escritorio/CuartoSemestre2025/Java/Leccion03/Leccion03/tienda_libros",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\anaca\OneDrive\Desktop\Tec 4Semestre\Java\Leccion03\tienda_libros\tienda_libros\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="TiendaLibrosApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="utn.tienda_libros.TiendaLibrosApplication" />
+      <module name="tienda_libros" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="utn.tienda_libros.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.TiendaLibrosApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="723fb131-31e1-4520-bd2a-ff16a9bc2598" name="Changes" comment="" />
+      <created>1758845286152</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1758845286152</updated>
+    </task>
+    <servers />
+  </component>
+</project>
