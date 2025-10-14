@@ -15,7 +15,7 @@ class Juego {
         this.personajes = [];
         this.jugador = null;
         this.enemigo = null;
-        this.ataques = ['Puño','Patada','Barrida'];
+        this.ataques = ['Puno','Patada','Barrida'];
 
         // refs
         this.selCont = document.getElementById('seleccionar-personaje');
@@ -127,7 +127,7 @@ class Juego {
 
     combate(aJ, aE){
         if (aJ === aE) return 'EMPATE';
-        if ((aJ==='Puño' && aE==='Barrida') || (aJ==='Patada' && aE==='Puño') || (aJ==='Barrida' && aE==='Patada')){
+        if ((aJ==='Puno' && aE==='Barrida') || (aJ==='Patada' && aE==='Puno') || (aJ==='Barrida' && aE==='Patada')){
             this.enemigo.perderVida(); return 'GANASTE';
         } else { this.jugador.perderVida(); return 'PERDISTE'; }
     }
