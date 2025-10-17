@@ -1,9 +1,12 @@
-import Reaact from 'react'
+import {use, useAuth} from "../context/AuthContext"
 
-function AboutPage() {
+function ProfilePage() {
+  const {user} = useAuth();
   return (
-    <div>AboutPage</div>
+    <div>
+      {JSON.stringify(user, null, 2)}
+    </div>
   )
 }
 
-export default AboutPage
+export default ProfilePage

@@ -1,9 +1,13 @@
-import Reaact from 'react'
+import { useContext } from 'react'
+import { Authcontext } from '../context/AuthContext'
 
-function AboutPage() {
+
+function HomePage() {
+  const data = useContext(Authcontext);
+  console.log(data);
   return (
-    <div>AboutPage</div>
+    <div>HomePage</div>
   )
 }
 
-export default AboutPage
+export default HomePage
