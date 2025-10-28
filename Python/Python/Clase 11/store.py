@@ -10,3 +10,4 @@ def get_data(url):
     for raza in razas.values(): #Utilizamos .values() para obtener los valores del diccionario
         print(f"Raza e los perros: {raza[5]}") #Estamos recorriendo la lista de razas y accediendo al sexto elemento de cada raza.
 
+get_data('https://dog.ceo/api/breeds/list/all')
