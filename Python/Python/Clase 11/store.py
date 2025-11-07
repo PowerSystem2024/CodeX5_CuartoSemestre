@@ -1,5 +1,6 @@
 import requests
 
+
 def get_data(url):
     r = requests.get('https://dog.ceo/api/breeds/list/all')
     print(r.status_code)
